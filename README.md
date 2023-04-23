@@ -83,5 +83,5 @@ $ npm start
 ## Contact
 
 - Website [davisphem.me](https://davisphem.me)
-- GitHub [@jay-davisphe](https://github.com/your-usermame)
+- GitHub [@jay-davisphem](https://github.com/jay-davisphem)
 - Twitter [@oluw4femi](https://twitter.com/oluw4femi)
