@@ -1,47 +1,43 @@
-import { useState, useRef } from 'react';
 import './App.css';
-import UploadPage from './pages/upload';
-import LoadingScreen from './pages/upload/loading.screen';
-import ResultScreen from './pages/upload/result.screen';
-import Footer from './components/footer/Footer';
+import Button from './components/Button';
+import Input from './components/Input';
+import Image from './components/Image';
 
-function App() {
-  const [page, setPage] = useState('upload');
-  const [file, setFile] = useState();
-  const [isLoading, setIsLoading] = useState(true);
-  const [isError, setIsError] = useState(false);
-  const [cloudURL, setCloudURL] = useState('');
+export default function App() {
+  const regular = 'rounded-xl text-white';
+  const array = [2, 3, 2, 3, 1, 32, 2, 1, 41, 33];
   return (
-    <div className="App">
-      <div
-        style={{
-          minHeight: '90vh',
-             display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        {page === 'upload' && (
-          <UploadPage setPage={setPage} setFile={setFile} isError={isError} />
-        )}
-        {page === 'loading' && (
-          <LoadingScreen
-            setPage={setPage}
-            isLoading={isLoading}
-            file={file}
-            setIsLoading={setIsLoading}
-            setCloudURL={setCloudURL}
-            setIsError={setIsError}
-          />
-        )}
-        {page == 'result' && (
-          <ResultScreen setPage={setPage} file={file} cloudURL={cloudURL} />
-        )}
-      </div>
-
-      <Footer />
+    <div className="p-10 bg-blue-400">
+      {/* <Button title="Add a photo" moreStyles={regular} />
+      <Button title="Submit" moreStyles={`px-5 ${regular}`} />
+      <Button title="Delete" moreStyles={`bg-[#EB5757] px-5 ${regular}`} />
+      <Button
+        title="delete"
+        moreStyles="bg-transparent rounded-3xl border-2 border-[#EB5757] px-5 py-1 font-normal text-[#EB5757]"
+      /> */}
+      {/* <Input
+        id="search"
+        icon="/vite.svg"
+        placeholder="Search by name"
+        styles="border-l-0"
+      /> */}
+      {/* <Input
+        styles="w-[300px] h-12 rounded-l-md"
+        label="Label"
+        placeholder="I am a label"
+      /> */}
+      {
+        <div className="flex w-[100%] flex-wrap justify-center gap-8">
+          {array.map((a) => (
+            <Image
+              img={{
+                url: '/page3.png',
+                label: 'This is but a page',
+              }}
+            />
+          ))}
+        </div>
+      }
     </div>
   );
 }
-
-export default App;
