@@ -4,17 +4,27 @@ import Input from './components/Input';
 import Image from './components/Image';
 
 export default function App() {
-  const regular = 'rounded-xl text-white';
+  const regular = 'rounded-xl text-white hover:bg-white';
   const array = [2, 3, 2, 3, 1, 32, 2, 1, 41, 33];
   return (
     <div className="p-10 bg-blue-400">
-      {/* <Button title="Add a photo" moreStyles={regular} />
-      <Button title="Submit" moreStyles={`px-5 ${regular}`} />
-      <Button title="Delete" moreStyles={`bg-[#EB5757] px-5 ${regular}`} />
+      <Button
+        title="Add a photo"
+        moreStyles={regular + ' bg-[#3DB46D]' + ' hover:text-[#3DB46D]'}
+      />
+      <Button
+        title="Submit"
+        moreStyles={`px-5 ${regular} bg-[#3DB46D] hover:text-[#3DB46D]`}
+      />
+      <Button
+        title="Delete"
+        moreStyles={`bg-[#EB5757] px-5 ${regular} hover:text-[#EB5757]`}
+      />
+
       <Button
         title="delete"
-        moreStyles="bg-transparent rounded-3xl border-2 border-[#EB5757] px-5 py-1 font-normal text-[#EB5757]"
-      /> */}
+        moreStyles="hover:text-white hover:bg-[#EB5757] bg-transparent rounded-3xl border-2 border-[#EB5757] px-5 py-1 font-normal text-[#EB5757]"
+      />
       {/* <Input
         id="search"
         icon="/vite.svg"

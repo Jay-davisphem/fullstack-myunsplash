@@ -12,7 +12,7 @@ export default function ({ img }) {
         <>
           <Button
             title="delete"
-            moreStyles="bg-transparent absolute right-4 top-4 rounded-3xl border-2 border-[#EB5757] px-5 py-1 font-normal text-[#EB5757]"
+            moreStyles="hover:text-white hover:bg-[#EB5757] bg-transparent absolute right-4 top-4 rounded-3xl border-2 border-[#EB5757] px-5 py-1 font-normal text-[#EB5757]"
           />
           <p className="absolute font-black text-white bottom-4 left-4">
             {img.label}
