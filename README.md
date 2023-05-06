@@ -1,4 +1,4 @@
-<h1 align="center">get-imagelink</h1>
+<h1 align="center">My Unsplash</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -83,5 +83,5 @@ $ npm start
 ## Contact
 
 - Website [davisphem.me](https://davisphem.me)
-- GitHub [@jay-davisphe](https://github.com/your-usermame)
+- GitHub [@jay-davisphem](https://github.com/jay-davisphem)
 - Twitter [@oluw4femi](https://twitter.com/oluw4femi)
