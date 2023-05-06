@@ -4,7 +4,7 @@ export default function ({ img }) {
   const [hovered, setHovered] = useState(false);
   return (
     <div
-      className="relative rounded-lg cursor-pointer"
+      className="border-[0.5px] border-gray-100 relative rounded-lg cursor-pointer hover:opacity-80 md:w-[32.5%] sm:w-[31%] "
       onMouseEnter={(e) => setHovered(true)}
       onMouseLeave={(e) => setHovered(false)}
     >
@@ -19,7 +19,7 @@ export default function ({ img }) {
           </p>
         </>
       )}
-      <img src={img.url} alt={img.label} className="rounded-lg  w-[20vw]" />
+      <img src={img.url} alt={img.label} className="rounded-lg" />
     </div>
   );
 }
