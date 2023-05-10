@@ -14,7 +14,7 @@ export default function ({ type, label, id, icon, placeholder, styles }) {
         )}
         <input
           type={type}
-          className={`outline-none rounded-r-xl py-3  sm:py-4 border-[1px] border-[#4F4F4F] ${styles} w-[100%]`}
+          className={`outline-none rounded-r-xl py-3  sm:py-[1.1rem] border-[1px] border-[#4F4F4F] ${styles} w-[100%]`}
           placeholder={placeholder}
           id={id}
         />

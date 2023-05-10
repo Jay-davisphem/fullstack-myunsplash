@@ -4,7 +4,7 @@ export default function ({ img }) {
   const [hovered, setHovered] = useState(false);
   return (
     <div
-      className="border-[0.5px] border-gray-100 relative rounded-lg cursor-pointer hover:opacity-80 md:w-[32.5%] sm:w-[31%] "
+      className="border-[0.5px] border-gray-100 relative rounded-lg cursor-pointer hover:opacity-80"
       onMouseEnter={(e) => setHovered(true)}
       onMouseLeave={(e) => setHovered(false)}
     >
